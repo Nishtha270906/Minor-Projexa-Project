@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Costlyzer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- top dark strip -->
+  
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">COSTLYZER</div>
+
+      <div class="search-wrap">
+        <input class="search" placeholder="Search for products..." aria-label="Search">
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-btn">🛍️</button>
+        <button class="icon-btn">👤</button>
+        <button class="btn-primary">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" >
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="hero-title">Why worry about prices when you can focus on your desired products.</h1>
+        <p class="lead">Up to 50% off on selected styles. Refresh your wardrobe with the latest trends.</p>
+        <button class="btn">Shop Now</button>
+        
+        <img src="https://i.pinimg.com/1200x/de/44/da/de44da06bc658bae2cd9b1b931cc1109.jpg" class="float-img img1">
+        <img src="https://i.pinimg.com/736x/68/fa/16/68fa163f419ea4dff33e914e02b8d2a3.jpg" class="float-img img2">
+        <img src="https://i.pinimg.com/1200x/ec/a0/04/eca004976e4bbe3826e4c8077d6852af.jpg" class="float-img img3">
+        
+      </div>
+
+      
+      </div>
+
+    </div>
+  </section>
+
+  <!--flash stripe-->
+  <div class="flash">
+    <div class="container flash-inner">
+      <div class="flash-text">
+        🔥FlashSale! Extra 20% OFF! Ends in
+      </div>
+      <div class="flash-timer">02:15:42</div>
+    </div>
+  </div>
+
+  <!-- main content -->
+  <main class="container layout" >
+    <!-- filters column -->
+    <aside class="filters">
+      <div class="panel">
+        <h4>Filters</h4>
+
+        <div class="filter-group">
+          <label class="filter-title">Category</label>
+          <label><input type="checkbox"> Men</label>
+          <label><input type="checkbox"> Women</label>
+          <label><input type="checkbox"> Accessories</label>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-title">Price</label>
+          <label><input type="checkbox"> Under ₹500</label>
+          <label><input type="checkbox"> ₹500–₹1000</label>
+          <label><input type="checkbox"> ₹1000+</label>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-title">Color</label>
+          <label><input type="checkbox"> Black</label>
+          <label><input type="checkbox"> White</label>
+          <label><input type="checkbox"> Blue</label>
+        </div>
+      </div>
+    </aside>
+
+
+      <!-- content column --->
+    <section class="content">
+      <!-- category chips -->
+      <div class="chips">
+        <div class="chip">
+          <img src="https://picsum.photos/seed/man/80/80" alt="">
+          <strong>Men</strong>
+        </div>
+        <div class="chip"><img src="https://picsum.photos/seed/woman/80/80" alt=""> 
+        <strong>Women</strong></div>
+        <div class="chip">
+          <img src="https://picsum.photos/seed/acc/80/80" alt="">
+        <strong> Accessories</strong></div>
+      </div>
+
+
+      <!-- product grid -->
+      <section style="background: url('https://png.pngtree.com/element_our/sm/20180206/sm_5a79577980466.jpg') no-repeat center center; background-size: cover; padding: 4rem; border-radius: 8px; margin-bottom: 5rem;">
+        <h2 style="color: rgb(35, 30, 30); text-align: center; font-style: Great vibes  , cursive;">Clothing products</h2>
+        <div class="grid">
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1011/400/300" alt=""></div>
+            <h3>Classic Denim Jacket</h3>
+            <div class="price">₹879.99</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1012/400/300" alt=""></div>
+            <h3>Men's White Sneakers</h3>
+            <div class="price sale">₹959.99</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1013/400/300" alt=""></div>
+            <h3>Women's Summer Dress</h3>
+            <div class="price">₹649.99</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1014/400/300" alt=""></div>
+            <h3>Leather Handbag</h3>
+            <div class="price">₹8120.00</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+      </div>
+      </section>
+
+      <!-- Best Sellers -->
+      <section style="background: url('https://wallpaperaccess.com/full/6290875.jpg') no-repeat center center; background-size: cover; padding: 4rem; border-radius: 8px; margin-bottom: 5rem;">
+        <h2 style="color: rgb(35, 30, 30); text-align: center; font-style: Great vibes  , cursive;">Electronics</h2>
+        <div class="grid grid-3">
+          <article class="mini-card">
+            <img src="https://picsum.photos/id/1011/400/300" alt="">
+            <h4>Denim Jacket</h4>
+            <div class="price">₹979.99</div>
+            <button class="btn btn-small">Add to Cart</button>
+          </article>
+
+          <article class="mini-card">
+            <img src="https://picsum.photos/id/1012/400/300" alt="">
+            <h4>White Sneakers</h4>
+            <div class="price">₹859.99</div>
+            <button class="btn btn-small">Add to Cart</button>
+          </article>
+
+          <article class="mini-card">
+            <img src="https://picsum.photos/id/1013/400/300" alt="">
+            <h4>Summer Dress</h4>
+            <div class="price">₹449.99</div>
+            <button class="btn btn-small">Add to Cart</button>
+          </article>
+        </div>
+      </section>
+
+      <section style="background: url('https://thumbs.dreamstime.com/b/abstract-yellow-green-blue-gradient-background-blurred-grainy-texture-331461101.jpg') no-repeat center center; background-size: cover; padding: 4rem; border-radius: 8px; margin-bottom: 5rem;">
+        <h2 style="color: rgb(35, 30, 30); text-align: center; font-style: Great vibes  , cursive;">Shoe collection</h2>
+        <div class="grid">
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1011/400/300" alt=""></div>
+            <h3>Classic Denim Jacket</h3>
+            <div class="price">₹879.99</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1012/400/300" alt=""></div>
+            <h3>Men's White Sneakers</h3>
+            <div class="price sale">₹959.99</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1013/400/300" alt=""></div>
+            <h3>Women's Summer Dress</h3>
+            <div class="price">₹649.99</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <div class="thumb"><img src="https://picsum.photos/id/1014/400/300" alt=""></div>
+            <h3>Leather Handbag</h3>
+            <div class="price">₹8120.00</div>
+            <button class="btn btn-add">Add to Cart</button>
+          </article>
+      </div>
+      </section>
+
+      <!-- testimonials -->
+      
+      <div class="testimonials-panel">
+        <h3>What Our Customers Say</h3>
+        <div class="test-cards">
+          <div class="test">
+            <img src="https://picsum.photos/seed/man/80/80" alt="">
+            <strong>Emily R.</strong>
+            <p>“Absolutely love the quality and fast shipping! My new favorite store.”</p>
+            
+          </div>
+          <div class="test">
+            <img src="https://picsum.photos/id/1012/400/300" alt="">
+            <strong>James K.</strong>
+            <p>“Great selection and amazing deals. The flash sale was a steal!”</p>
+              
+          </div>
+          <div class="test">
+            <img src="https://picsum.photos/id/1013/400/300" alt="">
+            <strong>Sophia L.</strong>
+            <p>“Customer service was super helpful. Will definitely shop again!”</p>
+              
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- newsletter -->
+      
+      <div class="newsletter"> 
+        <div class="newsletter-inner">
+          <div>
+            <h3>Stay in the Loop!</h3>
+            <p>Sign up for exclusive offers, new arrivals and more.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input placeholder="Your email address" type="email" required>
+            <button class="btn btn-sub">Subscribe</button>
+      
+          </form>
+            
+        </div>
+      </div>
+      
+
+    
+  </main>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-column">
+      <h4>Account</h4>
+      <ul>
+        <li>Login</li>
+        <li>Register</li>
+        <li>Order History</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Help</h4>
+      <ul>
+        <li>Contact Us</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Policies</h4>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Cookie Policy</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="socials">📸 📱  
+        <img src="https://icons8.com/icon/32323/instagram-new" alt=""> 📌
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      © 2026 Costlyzer. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
