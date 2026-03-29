@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background: #f9fafb;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+      display: flex;
+      gap: 40px;
+    }
+
+    .left, .right {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      flex: 1;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .total {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT: FORM -->
+  <div class="left">
+    <h2>Shipping Details</h2>
+
+    <input placeholder="Full Name">
+    <input placeholder="Phone Number">
+    <input placeholder="Address">
+    <input placeholder="City">
+    <input placeholder="Pincode">
+
+    <button class="btn" onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <!-- RIGHT: ORDER SUMMARY -->
+  <div class="right">
+    <h2>Order Summary</h2>
+
+    <div id="orderItems"></div>
+
+    <div class="total">
+      Total: <span id="totalPrice">₹0</span>
+    </div>
+  </div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
